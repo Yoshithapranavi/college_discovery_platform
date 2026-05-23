@@ -15,7 +15,7 @@ function EditCollegePage() {
 
     useEffect(() => {
 
-        fetch(`http://localhost:8081/colleges`)
+        fetch(`https://college-discovery-platform-jrxx.onrender.com`)
             .then((response) => response.json())
             .then((data) => {
 
