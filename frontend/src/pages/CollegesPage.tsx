@@ -20,7 +20,7 @@ function CollegesPage() {
 
     const fetchColleges = async () => {
 
-        const response = await fetch("https://college-discovery-platform-jrxx.onrender.coms")
+        const response = await fetch("https://college-discovery-platform-jrxx.onrender.com/colleges")
 
         const data = await response.json()
 

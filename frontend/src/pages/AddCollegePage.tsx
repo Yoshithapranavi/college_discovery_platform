@@ -24,7 +24,7 @@ function AddCollegePage() {
 
         try {
 
-            const response = await fetch("https://college-discovery-platform-jrxx.onrender.com", {
+            const response = await fetch("https://college-discovery-platform-jrxx.onrender.com/colleges", {
 
                 method: "POST",
 
