@@ -20,7 +20,7 @@ function CollegesPage() {
 
     const fetchColleges = async () => {
 
-        const response = await fetch("https://college-discovery-platform-jrxx.onrender.com/colleges")
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/colleges`)
 
         const data = await response.json()
 
@@ -37,7 +37,7 @@ function CollegesPage() {
 
         try {
 
-            await fetch(`http://localhost:8081/colleges/${id}`, {
+            await fetch(`${import.meta.env.VITE_API_URL}/colleges/${id}`, {
 
                 method: "DELETE"
 

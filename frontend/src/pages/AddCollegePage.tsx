@@ -24,7 +24,7 @@ function AddCollegePage() {
 
         try {
 
-            const response = await fetch("https://college-discovery-platform-jrxx.onrender.com/colleges", {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/colleges`, {
 
                 method: "POST",
 

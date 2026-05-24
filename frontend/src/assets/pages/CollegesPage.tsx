@@ -16,7 +16,7 @@ function CollegesPage() {
 
     useEffect(() => {
 
-        fetch("http://localhost:8081/colleges")
+        fetch(`${import.meta.env.VITE_API_URL}/colleges`)
             .then((response) => response.json())
             .then((data) => setColleges(data))
 

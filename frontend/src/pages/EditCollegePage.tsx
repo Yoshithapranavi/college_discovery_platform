@@ -15,7 +15,7 @@ function EditCollegePage() {
 
     useEffect(() => {
 
-        fetch(`https://college-discovery-platform-jrxx.onrender.com/colleges`)
+        fetch(`${import.meta.env.VITE_API_URL}/colleges`)
             .then((response) => response.json())
             .then((data) => {
 
@@ -47,7 +47,7 @@ function EditCollegePage() {
 
         try {
 
-            const response = await fetch(`http://localhost:8081/colleges/${id}`, {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/colleges/${id}`, {
 
                 method: "PUT",
 
