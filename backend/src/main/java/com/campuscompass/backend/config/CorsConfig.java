@@ -14,7 +14,8 @@ public class CorsConfig implements WebMvcConfigurer {
                 .allowedOrigins(
                         "http://localhost:5173",
                         "http://localhost:3000",
-                        "https://campuscompass-a011no02p-yoshitha.vercel.app")
+                        "https://campus-compass-fr024wo0i-yoshitha.vercel.app",
+                        "https://campus-compass-ruby.vercel.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
     }
